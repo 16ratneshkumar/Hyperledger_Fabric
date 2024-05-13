@@ -129,5 +129,19 @@ cd fabric-samples/test-network
 docker ps -a
 ```
 **You should be able to see the containers up and running.**
+### Step 5: Creating a Channel
+- You can use the network.sh script to create a channel between Org1 and Org2 and join their peers to the channel. Run the following command to create a channel with the default name of mychannel:
+```sh
+./network.sh createChannel
+```
+- You can also use the channel flag to create a channel with custom name.Using following cmd:
+```sh
+./network.sh createChannel -c <channel_name>
+```
+- If you want to bring up the network and create a channel in a single step, you can use the up and createChannel modes together:
+```sh
+./network.sh up createChannel
+```
+
 
 Thank you!
