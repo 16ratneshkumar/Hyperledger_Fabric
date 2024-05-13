@@ -129,3 +129,5 @@ cd fabric-samples/test-network
 docker ps -a
 ```
 **You should be able to see the containers up and running.**
+
+Thank you!
